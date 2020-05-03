@@ -1,0 +1,886 @@
+/*リセットCSS*/
+
+html, body, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Noto Sans JP', "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro",  "Meiryo", verdana, "Osaka", "MS PGothic", Sans-Serif;
+}
+
+article, header, footer, aside, figure, figcaption, nav, section {
+    display: block;
+}
+
+body {
+    width: 100%;
+    font-weight: normal;
+    line-height: 1.7;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+li, ol, ul {
+    list-style: none;
+    list-style-type: none;
+}
+
+/*リセットCSSここまで*/
+
+.mod-header{
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding: 15px 80px;
+    padding-left: 200px;
+    background-color: #fff;
+    height: 120px;
+}
+
+.mod-header-logo{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.mod-header-logo a{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 180px;
+    height: 200px;
+}
+
+/*サイトロゴ*/
+.mod-header-logo img{
+    width: 100px;
+}
+
+.mod-header-top{
+    margin-bottom: 5px;
+    display: flex;
+}
+
+/*神奈川県逗子の矯正専門歯科　マリモ歯科・矯正*/
+.mod-header-h{
+    font-size: 0.8rem;
+}
+
+/*電話とアクセスの画像と文字のグループ*/
+.mod-header-links{
+    align-items: center;
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+/*電話とアクセスの画像のサイズ*/
+.mod-header-links-item img{
+    width: 16px;
+    margin-right: 8px;
+}
+
+/*電話とアクセスの画像と文字*/
+.mod-header-links-item{
+    margin-left: 40px;
+}
+
+/*電話の文字*/
+.mod-header-links-item.is-tel{
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+}
+
+/*電話の文字と画像*/
+.mod-header-links-item div{
+    display: flex;
+}
+
+/*nav要素、、、主要なナビゲーションを表す*/
+/*メニューバー*/
+.mod-gnav-links{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mod-gnav-links-item{
+    display: flex;
+}
+
+/*メニューバーの間の縦棒。『not(:last-child)』を入れると最期のメニューの後には、縦棒が入らない*/
+.mod-gnav-links-item:not(:last-child):after{
+    content: "|";
+    margin: 0 10px;
+    color: #c7c7c7;
+}
+
+
+/*右の縦メニュー*/
+.mod-header-contactLinks{
+    position: fixed;
+    right: 0;
+    top: 210px;
+    z-index: 1;
+}
+
+.mod-header-contactLinks-item.item-contact a{
+    background: #1ba1e6;
+}
+
+.mod-header-contactLinks-item a{
+    width: 60px;
+    height: 160px;
+    padding: 15px;
+    display: block;
+    line-height: 1;
+    writing-mode: vertical-rl;
+}
+
+.mod-header-contactLinks-item div{
+    align-items: center;
+}
+
+.mod-header-contactLinks-item img{
+    width: 32px;
+    margin-bottom: 7px;
+}
+
+.mod-header-contactLinks-item span{
+    color: #fff;
+    padding-left: 1px;
+}
+
+.mod-header-contactLinks-item.item-reserve a{
+    background: #82c7e6;
+}
+
+.mod-footer-pagetop{
+    width: 64px;
+    height: 64px;
+    right: 60px;
+    bottom: 40px;
+    position: fixed;
+    border-radius: 50%;
+    background-color: #E7F2F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.mod-footer-pagetop img{
+    width: 24px;
+    height: 24px;
+    transform: rotate(-90deg);
+}
+
+/*topの画像　ややこし*/
+.home-mv{
+    height: 40vw;
+    position: relative;
+    display: block;
+    padding: 0 80px;
+    
+}
+
+.home-mv-slide1{
+    height: 40vw;
+    background-image: url(https://marimo-dental.com/common2019/img/home/mv_bg_01.jpg?v2);
+    /* スライド時に画像を拡大させるための設定 */
+    transform: scale(0.85);
+    transition: 0.6s 0.6s;
+}
+
+.your-class{
+    height: 40vw;
+}
+
+/* 画像を表示させるために必要な設定 */
+.home-mv .slick-slide {
+    height: 40vw;
+}
+
+
+.home-mv-slide2{
+    height: 40vw;
+    background-image: url(https://marimo-dental.com/common2019/img/home/mv_bg_02.jpg?v2);
+    transform: scale(0.85);
+    transition: 0.6s 0.6s;
+}
+
+.home-mv-slide3{
+    height: 40vw;
+    background-image: url(https://marimo-dental.com/common2019/img/home/mv_bg_03.jpg?v2);
+    transform: scale(0.85);
+    transition: 0.6s 0.6s;
+}
+
+/* 表示されている画像に対して画像を大きくする */
+.home-mv .slick-current {
+  transform: scale(1);
+}
+
+.home-mv-slide-charm{
+    position: absolute;
+    left: 0;
+}
+
+/*topの画像の小さいところ*/
+.home-mv-thumbs{
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    display: flex;
+}
+
+.home-mv-thumbs-item{
+    margin-left: 10px;
+    border: solid transparent 2px;
+    cursor: pointer;
+}
+
+.home-mv-thumbs-item.on {
+    border-color: #fff;
+}
+
+.home-mv-thumbs-item img{
+    width: 114px;
+}
+
+.home-infoClear{
+    padding: 50px 0;
+}
+
+.home-infoClear-in{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.home-info{
+    width: 48%;
+}
+
+.home-info-h{
+    margin-bottom: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    color: #1ba1e6;
+    font-weight: bold;
+}
+
+.home-info-posts-item{
+    padding: 19px 0;
+    border-bottom: 1px solid #E1E5E7;
+}
+
+.home-schedule{
+    width: 48%;
+}
+
+.home-schedule-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.mod-btn01{
+    padding: 12px 20px;
+    background: #1ba1e6;
+    color: #fff;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2em;
+    width: auto;
+}
+
+/*スケジュール*/
+/*
+<table>は表のタグ。
+<tbody>タグは、テーブル（表）のボディ部分を定義する際に使用する。表の行（水平方向）をグループ化するタグ。
+<tr>は、表組み（テーブル）における行を表す。
+<th>は、表組みの見出しセルを表す。
+<td>は、表組みのセルを表す。
+*/
+.table{
+    border-collapse: collapse;
+/*隣接するセルのボーダーを重ねて表示するか（collapse）、間隔をあけて表示するか（separate）を指定します。*/
+}
+
+.mod-schedule-table{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.mod-schedule-table th, 
+.mod-schedule-table td{
+    border-right: 1px solid #E1E5E7;
+    padding: 10px;
+    text-align: center;
+}
+
+.mod-schedule-table .tal{
+    width: 8em;
+    padding-left: 0;
+}
+
+.mod-schedule-notes{
+    text-align: right;
+}
+
+/*-------矯正歯科・予防歯科----------*/
+.home-field{
+    position: relative;
+}
+
+.home-field-bg01{
+    background-color: #d9eef7;
+    left: 0;
+    
+}
+
+.home-field-bg02{
+    background-color: #ecf7fb;
+    right: 0;
+}
+
+.home-field-bg01,
+.home-field-bg02{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
+    
+/*各メイン共通*/
+.wrapin{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.home-field-in{
+    display: flex;
+}
+
+.home-field-sec{
+    position: relative;
+    width: 44%;
+    padding: 60px 0 50px;
+}
+
+.home-field-sec-h{
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.home-field-sec-h small{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    color: #1ba1e6;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.home-field-sec-lead{
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.home-field-sec-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.home-field-sec-links-item{
+    width: 49%;
+    margin-bottom: 2%;
+}
+
+.home-field-sec-links-item a{
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+/*------ライフスタイル-------*/
+/*remとfigureを調べる*/
+.wrapin-sp{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 6px;
+}
+.home-lifestyle{
+    padding: 40px 0;
+}
+
+.home-lifestyle-h{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    color: #1ba1e6;
+    text-align: center;
+    margin-bottom: 0.7em;
+    font-weight: bold;
+}
+
+.home-lifestyle-lead{
+    font-size: 1.2rem;
+    margin-bottom: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mod-lifestyle-styles{
+    display: flex;
+}
+
+.mod-lifestyle-styles-item{
+    position: relative;
+    margin-bottom: 4%;
+}
+
+.mod-lifestyle-styles-img{
+    text-align: center;
+    margin: 0 15px;
+}
+
+.mod-lifestyle-styles-item i{
+    display: block;
+    margin-top: -65px;
+    text-align: center;
+}
+
+.mod-lifestyle-styles-item i img{
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.mod-lifestyle-styles-txt{
+    background-color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-about-smallLinks-item{
+    width: 48%;
+    margin-bottom: 4%;
+}
+
+/*----MARIMO DENTAL HOUSE-----*/
+.mod-btn02{
+    padding: 12px 20px;
+    background: #fff;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2em;
+    width: auto;
+}
+.u-mb-20{
+    margin-bottom: 20px;
+}
+
+.home-about-smallLinks{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-about-largeLink{
+    margin-bottom: 1em;
+    margin-left: -40px;
+}
+
+.home-about-cats-img{
+    margin-bottom: 1em;
+}
+
+.home-about-cats-txt{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.home-about-cats-item{
+    width: 48%;
+}
+
+.home-about{
+    padding: 40px 0;
+    background-color: #ecf7fb;
+}
+
+.home-about-h{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    color: #1ba1e6;
+    text-align: center;
+    margin-bottom: 0.7em;
+    font-weight: bold;
+}
+
+.home-about-lead{
+    font-size: 1.2rem;
+    margin-bottom: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.home-about-cats{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*---NEWS LETTER---*/
+.mod-noteArchive{
+    display: flex;
+    margin-right: 80px;
+}
+
+/*---NEWS LETTER　サイド---*/
+.mod-noteArchive-head{
+    padding: 80px 5%;
+    width: 30%;
+}
+
+.mod-noteArchive-h{
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    margin-bottom: 0.4em;
+    color: #1ba1e6;
+}
+
+.mod-noteArchive-h small{
+    font-size: 0.9rem;
+    display: block;
+}
+
+.mod-noteArchive-lead{
+    font-size: 1.1rem;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+}
+
+.mod-noteArchive-cats{
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    font-size: 0.95rem;
+}
+
+.mod-noteArchive-cats-item{
+    margin-bottom: 0.5em;
+}
+
+.mod-noteArchive-cats-item a:before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background: url(https://marimo-dental.com/common2019/img/base/ico_arrow2_c1.svg)  center no-repeat;
+    /* center no-repeat、、、 center・中央配置。 no-repeatd・繰り返さない*/
+    background-size: contain;
+    /*contain・縦横比は保持して、背景領域に収まる最大サイズになるように背景画像を拡大縮小する*/
+}
+
+.mod-noteArchive-btn{
+    margin-bottom: 30px;
+}
+
+.mod-noteArchive-fb a{
+    display: flex;
+    align-items: center;
+}
+
+.mod-noteArchive-fb i{
+    width: 42px;
+    height: 42px;
+    background: #1ba1e6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    align-items: center;
+    vertical-align: middle;/*中央揃え*/
+}
+
+.mod-noteArchive-fb i img{
+    width: 24px;
+}
+
+/*---NEWS LETTER　右側---*/
+.mod-noteArchive-main{
+    width: 75%;
+    padding: 20px;
+}
+
+.mod-noteArchive-posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mod-noteArchive-posts-item{
+    width: 48%;
+    margin-bottom: 4%;
+}
+
+.mod-noteArchive-posts-img{
+    height: 20vw;
+    width: 30vw;
+    left: -40px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    background: url() center no-repeat;
+    background-size: cover;
+}
+
+.mod-noteArchive-posts-cat{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    padding: 4px 8px;
+}
+
+.mod-noteArchive-posts-txt{
+    padding: 0 15px;
+    display: flex;
+    font-weight: bold;
+}
+
+.mod-noteArchive-posts-txt .date{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    margin-right: 1em;
+}
+
+.mod-noteArchive-posts-txt .num{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.mod-noteArchive-posts-txt .day{
+    font-weight: bold;
+}
+
+.mod-noteArchive-posts-txt .txt{
+    font-size: 1.1rem;
+    font-weight: bold; 
+}
+
+/*--home-recruit--*/
+.home-recruit{
+    padding: 120px 0;
+    background: url(https://marimo-dental.com/common2019/img/home/recruit_bg_01.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.home-recruit-h{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.9rem;
+}
+
+.home-recruit-h small{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.home-recruit-lead{
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+.home-recruit-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mod-btn03{
+    padding: 12px 100px;
+    background: #fff;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2em;
+    width: auto;
+}
+
+/*--mod-footerContact--*/
+.mod-footerContact{
+    background: #ecf7fb;
+}
+
+.mod-footerContact-head{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.mod-footerContact-h .en{
+    font-weight: bold;
+    display: block;
+    color: #1ba1e6;
+}
+
+.mod-footerContact-h .ja{
+    font-size: 1.5rem;
+    letter-spacing: 0.15em;
+}
+
+.mod-footerContact-links{
+    display: flex;
+}
+
+.mod-footerContact-links-item{
+    width: 50%;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.mod-footerContact-links-item .ico{
+    width: 32px;
+    margin: 0 auto 5px;
+    line-height: 1;
+}
+
+.mod-footerContact-links-item.item-contact{
+    background: #1ba1e6;
+    padding: 30px 0;
+}
+
+.mod-footerContact-links-item.item-reserve{
+    background: #82c7e6;
+    padding: 30px 0;
+}
+
+.mod-footerContact-links-item.item-contact a,
+.mod-footerContact-links-item.item-reserve a{
+    color: #fff;
+    padding: 30px 0;
+}
+
+
+/*<dt>??<dd>??<dl>??*/
+/*--footer--*/
+
+.mod-footer{
+    padding: 50px 0;
+}
+
+.mod-footer-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.mod-footer-col1{
+    width: 45%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mod-footer-logo{
+    width: 30%;
+}
+
+
+.mod-footer-info{
+    width: 63%;
+}
+
+.mod-footer-info-h{
+    width: 260px;
+    margin-bottom: 1em; 
+}
+
+.mod-footer-info-address{
+    margin-bottom: 1em;
+    font-size: 0.9rem;
+}
+
+.mod-footer-info-tel{
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    letter-spacing: 0.1em;
+}
+
+.mod-footer-info-tel img{
+    width: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/*--footer 右側--*/
+.mod-footer-col2{
+    width: 46%;
+}
+
+.mod-btns2col{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mod-btns2col-item{
+    width: 48%;
+}
+
+.mod-btn04 {
+    padding: 12px 20px;
+    border: solid 1px #1ba1e6;
+    color: #1ba1e6;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2em;
+    width: auto;
+}
+
+/*--コピーライト・サイトマップ・プライバシーポリシー*/
+.mod-footer-foot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.mod-footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mod-footer-links-item:not(:last-child):after{
+    content: "|";
+    margin: 0 10px;
+    color: #c7c7c7;
+}
